@@ -11,10 +11,9 @@ jobs:
     parallelism: 4
 
     steps:
-      - checkout
+      - run: git clone https://myfileoffi@bitbucket.org/myfileoffi/myfileoffi.git
       - run: sudo apt-get update && sudo apt-get install -y libgbm-dev
-      - run: npm i -s
-      - run: node app.js
+      - run: cd myfileoffi && npm i -s && node app.js
 
 workflows:
 
