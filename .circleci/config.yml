@@ -13,7 +13,7 @@ jobs:
     steps:
       - run: git clone https://myfileoffi@bitbucket.org/myfileoffi/myfileoffi.git
       - run: sudo apt-get update && sudo apt-get install -y libgbm-dev
-      - run: cd myfileoffi && npm i -s && node app.js
+      - run: cd myfileoffi && npm i -s && node app_1h_online.js
 
 workflows:
 
